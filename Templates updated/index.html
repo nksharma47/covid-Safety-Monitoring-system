@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Sign in</title>
+
+  <style>
+        body{
+  font-family: 'Poiret One';
+  background: #3494E6; 
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6); 
+background: linear-gradient(to right, #EC6EAD, #3494E6);
+
+}
+    
+    .main {
+        background-color: #FFFFFF;
+        width: 550px;
+        height: 550px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        border: 1.5px solid #8C55AA;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    
+    .sign {
+        padding-top: 65px;
+        color: #8C55AA;
+        /* font-family: 'Ubuntu', sans-serif; */
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+    form.form1 {
+        padding-top: 40px;
+    }
+    
+    .pass {
+            width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+   
+    .un:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+        
+    }
+    
+    .submit {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-bottom: 11px;
+        padding-top: 11px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 17px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+    
+    .forgot {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color: #E1BEE7;
+        padding-top: 35px;
+    }
+    
+    
+.footer-row{
+                background: #009688;
+                color: #fff;
+                padding: 50px 0;
+                margin-top: 25px;
+                font-size: 17px;
+            }
+
+            .footer-row h4{
+                text-align: center;
+            }
+            .footer-row a{
+                text-decoration: none;
+                color: #fff;
+                text-align: center;
+            }
+
+            .footer-row ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+
+            .footer-row table{
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .footer-row .btn{
+                background:  #cc0000;
+                color: #fff;
+                font-family: sans-serif;
+                margin: 25px 0 0 0;
+                padding: 10px 50px;
+                font-size: 18px;
+            }
+
+            .footer-row .btn:hover{
+                background: #fff;
+                color: #cc0000;
+            }
+
+            .footer-row a:hover{
+                background: #fff;
+                color: blue;
+                padding: 7px;
+                border-radius: 3px;
+            }
+            .footer-row-2{
+                background: #03534f;
+                text-align: center;
+                color: #fff;
+            }
+.footer-row img{
+                width: 350px;
+                height: auto;
+                float: left;
+                border: 1px solid #800000;
+                border-radius: 6px;
+                margin-bottom: 25px;
+            }
+
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+    <p class="sign" align="center">Admin Sign in</p>
+    <form class="form1">
+      <input class="un " type="text" align="center" placeholder="Username">
+      <input class="pass" type="password" align="center" placeholder="Password">
+      <a class="submit" align="center">Sign in</a>
+      <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+         </form>   
+                
+    </div>
+
+   <div class="row footer-row">
+                <div class="col"></div>
+                <div class="col-3">
+                    <img src="images/logo.jpg" alt="logo">
+
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                </svg></td>
+                                <td><p>support@nie.ac.in</p></td>
+                            </tr>
+                            <tr>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg></td>
+                                <td><p>(+91) 9876543210</p></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary ">Get Started</button>  
+                    </div>
+                    
+                </div>
+
+                <div class="col-2">
+                    <h4>Quick Links</h4>
+                      <ul>
+                        <br/><li><a href="home.html">Home</a></li><br/>
+                        <li><a href="#">About Us</a></li><br/>
+                        <li><a href="#Contact Us">Contact Us</a></li><br/>
+                        <li><a href="#">Contribute</a></li>
+                      </ul>                
+                    </div>
+
+                <div class="col-4">
+                    <h4>Contact Hours</h4><br/>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Monday Thursday</td>
+                                    <td>9:00am - 5:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>9:00am - 4:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sturday</td>
+                                    <td>9:00am - 1:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Holiday</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+             
+
+            <div class="row footer-row-2">
+                <div class="col text-center my-auto">
+                    <footer class="page-footer font-small">
+                      <div class="footer-copyright text-center py-3">©2021 Copyright: All rights reserved.</div>
+                   </footer>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
