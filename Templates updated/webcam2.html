@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-        <title>Livestream Section</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        <title>Livestream Section</title>
 
         <style>
             body{
@@ -20,7 +19,7 @@
                 background: #009688;
                 /* color: #000; */
                 height: auto;
-                padding: 30px 30px 30px 0;
+                padding: 25px 30px 25px 0;
                 /* border-bottom: 2px solid #000; */
             }
 
@@ -61,41 +60,69 @@
                 border-radius: 8px;
             }
 
-            .main{
+            .video-container {
+                margin: 10px 0;
                 min-height: 770px;
-                text-align: center;
-            }
-            .main .live{
-                background: #130c0c;
-                padding: 22px 0 10px 0;
-                text-align: center;
-            }
-
-            .main .live video{
-                width: 1280px;
+                /* max-width: 100%; */
+                width: 100%;
                 height: auto;
-                border: 1px solid #fff;
-                
+                position: relative;
+                background: #000;
             }
-
-            .main .cam-select{
-                height: 770px;
-                overflow-y: scroll;
-                /* min-height: 1000px; */
-                background: #130c0c;
+            /* Video Slider */
+            .video-slider {
+                display: none;
             }
-
-            .main .cam-select .col{
-                margin: 7px 0;
+            /* Individual Slide: Container */
+            .video-slide {
+                position: relative;
+                margin: 0 auto;
+            }
+            /* Individual Slide: Video */
+            .video-slide video {
+                width: 100%;
+                height: 766px;
+            }
+            /* Navigation */
+            .video-slider-btn {
+                border: none;
+                display: inline-block;
+                color: #fff;
+                font-size: 100px;
                 padding: 10px;
-                border: 1px solid cornsilk;
+                vertical-align: middle;
+                overflow: hidden;
+                text-decoration: none;
+                background-color: transparent;
+                text-align: center;
+                cursor: pointer;
+                white-space: nowrap;
+                z-index: 99999;
+                opacity: .7;
+                transition: all 350ms ease-in-out;
             }
 
-            .main .cam-select .col a{
-                text-decoration: none;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: cornsilk;
+            .video-slider-btn:hover {
+                opacity: 1;
+                transition: all 350ms ease-in-out;
             }
+
+            .video-slider-btn.left-side {
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                transform: translate(0%,-50%);
+                -ms-transform: translate(-0%,-50%);
+            }
+
+            .video-slider-btn.right-side {
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                transform: translate(0%,-50%);
+                -ms-transform: translate(0%,-50%);
+            }
+
             .footerrow
             {
                 background: #008080;
@@ -128,56 +155,30 @@
             </div>
 
             <div class="row main">
-                <div class="col-md-12 col-lg-9 live">
-                    <video autoplay muted>
-                        <source src="images/dummy.mp4" type="video/mp4">
-                    </video>
-
-                </div>
-
-                <div class="col cam-select">
-                    <div class="col">
-                        <video height="225" width="auto" autoplay muted>
-                            <source src="images/dummy.mp4" type="video/mp4">
+                <div class="video-container">
+                    <a class="video-slider, videobox">
+                      <div class="video-slide">
+                        <video controls autoplay>
+                          <source src="images/dummy-1.mp4" type="video/mp4">
                         </video>
-                        <a href="#"><h5>Camera 1</h5></a>
-                    </div>
-
-                    <div class="col">
-                        <video height="225" width="auto" autoplay muted>
-                            <source src="images/dummy.mp4" type="video/mp4">
+                      </div>
+                      <div class="video-slide">
+                        <video controls autoplay>
+                          <source src="images/dummy-2.mp4" type="video/mp4">
                         </video>
-                        <a href="#"><h5>Camera 2</h5></a>
-                    </div>
-
-                    <div class="col">
-                        <video height="225" width="auto" autoplay muted>
-                            <source src="images/dummy.mp4" type="video/mp4">
+                      </div>
+                      <div class="video-slide">
+                        <video controls autoplay>
+                          <source src="images/dummy-1.mp4" type="video/mp4">
                         </video>
-                        <a href="#"><h5>Camera 3</h5></a>
-                    </div>
+                      </div>
+                    </a>
+                  
+                  
+                    <button class="video-slider-btn left-side" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="video-slider-btn right-side" onclick="plusDivs(1)">&#10095;</button>
+                  </div>
 
-                    <div class="col">
-                        <video height="225" width="auto" autoplay muted>
-                            <source src="images/dummy.mp4" type="video/mp4">
-                        </video>
-                        <a href="#"><h5>Camera 4</h5></a>
-                    </div>
-
-                    <div class="col">
-                        <video height="225" width="auto" autoplay muted>
-                            <source src="images/dummy.mp4" type="video/mp4">
-                        </video>
-                        <a href="#"><h5>Camera 5</h5></a>
-                    </div>
-
-                    <div class="col">
-                        <video height="225" width="auto" autoplay muted>
-                            <source src="images/dummy.mp4" type="video/mp4">
-                        </video>
-                        <a href="#"><h5>Camera 6</h5></a>
-                    </div>
-                </div>
             </div>
 
             <div class="row footerrow">
@@ -189,6 +190,37 @@
             </div>
 
         </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {  
+            showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+            var i,
+                x = document.getElementsByClassName("video-slide"),
+                y = document.getElementsByTagName("video");
+            
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                y[i].pause();
+            }
+            
+            x[slideIndex-1].style.display = "block";
+            
+            }
+        </script>
 
     </body>
 </html>
